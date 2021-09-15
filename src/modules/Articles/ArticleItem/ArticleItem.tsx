@@ -22,9 +22,8 @@ const ArticleItem: React.FC = (props: any) => {
             {/* <div className="w-24 h-24 bg-gray-500 rounded" /> */}
             <img
               src={
-                props?.cover_image
-                  ? props?.cover_image
-                  : "https://thepracticaldev.s3.amazonaws.com/i/78hs31fax49uwy6kbxyw.png"
+                props?.cover_image ||
+                "https://thepracticaldev.s3.amazonaws.com/i/78hs31fax49uwy6kbxyw.png"
               }
               alt="Dev.to Author"
               className="relative h-screen-15 object-cover object-top"
