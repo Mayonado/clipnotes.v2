@@ -23,8 +23,10 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>CLIPNOTES</title>
       </Head>
-      <div className="scrollbar scrollbar-thin scrollbar-thumb-gray-400 bg-gray-50 min-h-screen flex flex-col">
+      <div className="scrollbar scrollbar-thin scrollbar-thumb-gray-400 bg-gray-50 min-h-screen h-screen flex flex-col">
+        {/* <div className="scrollbar scrollbar-thin scrollbar-thumb-gray-300"> */}
         <Component {...pageProps} />
+        {/* </div> */}
       </div>
     </QueryClientProvider>
   );
