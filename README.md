@@ -1,9 +1,15 @@
 ## CLIPNOTESv2
 
+A web application that collates the latest articles from dev.to & daily trending repositories from Github filtered by Javascript programming language.
+
+This was made to solve the problem of the author by visiting multiple websites just to read trending technologies in Javascript.
+
+### Articles page
+
 ![Articles page](public/images/screenshots/articles-page.png "articles")
 
-: A web application that collates the latest articles from dev.to & daily trending repositories from Github filtered by Javascript programming language.
+### Repositories page
 
-: This was made to solve the problem of the author by visiting multiple websites just to read trending technologies in Javascript.
+![Repositories page](public/images/screenshots/repositories-page.png "repositories")
 
-The web application is deployed in vercel [CLIPNOTES](https://clipnotes.vercel.app "Clipnotes web application").
+[CLIPNOTES](https://clipnotes.vercel.app "The web application is deployed in vercel.").
