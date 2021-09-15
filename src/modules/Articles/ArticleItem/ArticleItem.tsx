@@ -18,7 +18,7 @@ const ArticleItem: React.FC = (props: any) => {
         className="hover:bg-gray-50 py-4 rounded-md"
       >
         <div className="flex flex-col sm:flex-row p-2 sm:p-4 gap-4">
-          <div className="w-12/12 sm:w-1/12">
+          <div className="flex w-12/12 sm:w-3/12 md:w-4/12 lg:w-2/12 items-center justify-center">
             {/* <div className="w-24 h-24 bg-gray-500 rounded" /> */}
             {props?.cover_image ? (
               <img src={props?.cover_image} alt="Dev.to Author" />
@@ -26,7 +26,7 @@ const ArticleItem: React.FC = (props: any) => {
               <PhotographIcon />
             )}
           </div>
-          <div className="flex flex-col gap-1 w-10/12">
+          <div className="flex flex-col gap-1 sm:w-9/12 md:w-8/12">
             <div className="text-gray-700 font-medium">{props?.title}</div>
             <div className="text-gray-700 text-sm">
               {moment(props?.published_at).format("MMMM DD, YYYY")} -{" "}
