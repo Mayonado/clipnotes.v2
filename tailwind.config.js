@@ -445,6 +445,7 @@ module.exports = {
       full: "100%",
       screen: "100vh",
       "screen-10": "10vh",
+      "screen-15": "15vh",
       "screen-20": "20vh",
     }),
     inset: (theme, { negative }) => ({
@@ -810,7 +811,7 @@ module.exports = {
       screen: "100vw",
       min: "min-content",
       max: "max-content",
-      inherit: "inherit"
+      inherit: "inherit",
     }),
     zIndex: {
       auto: "auto",
