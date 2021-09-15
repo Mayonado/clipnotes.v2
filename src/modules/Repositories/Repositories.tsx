@@ -31,8 +31,16 @@ export const Repositories: NextPage = (props: any) => {
       <div className="flex flex-col px-2 sm:px-5">
         <div className="text-gray-700 font-bold text-xl ">Repositories</div>
         <div className="text-gray-700 text-sm">
-          Top 25 daily trending Github repositories filtered in Javascript
-          programming language.
+          Top 25 daily trending{" "}
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-indigo-500"
+          >
+            Github
+          </a>{" "}
+          repositories filtered in Javascript programming language.
         </div>
       </div>
       <div className="flex flex-col gap-2 my-8">
