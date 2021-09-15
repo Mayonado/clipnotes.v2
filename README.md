@@ -1,6 +1,6 @@
 ## CLIPNOTESv2
 
-A web application that collates the latest articles from dev.to & daily trending repositories from Github filtered by Javascript programming language.
+A web application that collates the latest articles from [Dev.to](https://dev.to "Dev.to official website") & daily trending repositories from [Github](https://github.com/trending "Github trending repositories") filtered in Javascript programming language.
 
 This was made to solve the problem of the author by visiting multiple websites just to read trending technologies in Javascript.
 
