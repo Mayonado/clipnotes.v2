@@ -1,9 +1,11 @@
 import { Navbar } from "components/Navbar/Navbar";
+import PageLoader from "components/PageLoader/PageLoader";
 
 const Layout: React.FC = ({ children }) => {
   return (
     <>
       <Navbar />
+      <PageLoader color="#3f51b5" />
 
       <div className="flex flex-row justify-center py-6">
         <div className="w-9/12 bg-white p-12 shadow-lg">{children}</div>

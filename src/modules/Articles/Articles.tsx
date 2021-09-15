@@ -6,6 +6,7 @@ import axios from "axios";
 import { Article } from "Interfaces/Article";
 import ArticleItem from "./ArticleItem/ArticleItem";
 import { useQuery } from "react-query";
+import Loader from "components/Loader/Loader";
 
 export const Articles: NextPage = (props) => {
   //   const [activeTab, setActiveTab] = useState<string>("articles");
@@ -23,7 +24,7 @@ export const Articles: NextPage = (props) => {
   );
   //   console.log(data);
   if (isLoading) {
-    return <div>Loading pa this...</div>;
+    return <Loader />;
   }
 
   console.log("this component rerenders?");
