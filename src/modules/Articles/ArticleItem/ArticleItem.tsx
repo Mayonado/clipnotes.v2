@@ -17,7 +17,7 @@ const ArticleItem: React.FC = (props: any) => {
         rel="noreferrer"
         className="hover:bg-gray-50 py-4 rounded-md"
       >
-        <div className="flex flex-col sm:flex-row p-4 gap-4">
+        <div className="flex flex-col sm:flex-row p-2 sm:p-4 gap-4">
           <div className="w-12/12 sm:w-1/12">
             {/* <div className="w-24 h-24 bg-gray-500 rounded" /> */}
             {props?.cover_image ? (

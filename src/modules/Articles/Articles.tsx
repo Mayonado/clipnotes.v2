@@ -27,8 +27,6 @@ export const Articles: NextPage = (props) => {
     return <Loader />;
   }
 
-  console.log("this component rerenders?");
-
   //   console.log("this is the data", data);
   // const { data: meData } = useMeQuery();
 
@@ -62,7 +60,21 @@ export const Articles: NextPage = (props) => {
   //   };
   return (
     <Layout>
-      <div className="text-gray-700 font-bold text-xl px-5">Articles</div>
+      <div className="flex flex-col px-2 sm:px-5">
+        <div className="text-gray-700 font-bold text-xl ">Articles</div>
+        <div className="text-gray-700 text-sm">
+          Top 25 latest articles in{" "}
+          <a
+            href="https://dev.to/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-indigo-500"
+          >
+            Dev.to
+          </a>{" "}
+          filtered in Javascript programming language.
+        </div>
+      </div>
       <div className="flex flex-col gap-2 my-8">
         {articleData?.data?.map((article: any) => {
           return <ArticleItem {...article} key={article.id} />;

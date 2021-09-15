@@ -28,7 +28,13 @@ export const Repositories: NextPage = (props: any) => {
   //   };
   return (
     <Layout>
-      <div className="text-gray-700 font-bold text-xl px-5">Repositories</div>
+      <div className="flex flex-col px-2 sm:px-5">
+        <div className="text-gray-700 font-bold text-xl ">Repositories</div>
+        <div className="text-gray-700 text-sm">
+          Top 25 daily trending Github repositories filtered in Javascript
+          programming language.
+        </div>
+      </div>
       <div className="flex flex-col gap-2 my-8">
         {props?.repositories?.map((repo: any) => (
           <>
@@ -38,11 +44,11 @@ export const Repositories: NextPage = (props: any) => {
               rel="noreferrer"
               className="hover:bg-gray-50 py-4 rounded-md"
             >
-              <div className="flex flex-row p-4 gap-4">
-                <div className="flex w-1/12 text-center justify-center items-center">
+              <div className="flex flex-row sm:p-4 gap-4">
+                <div className="flex w-2/12 sm:w-1/12 text-center justify-center items-center">
                   <Image src={github} alt="Github icon" />
                 </div>
-                <div className="flex flex-col gap-1 w-10/12">
+                <div className="flex flex-col gap-1 w-10/12 sm:w-11/12">
                   <div className="text-gray-700 font-medium">
                     {repo?.title.substring(1)}
                   </div>
