@@ -21,7 +21,11 @@ const ArticleItem: React.FC = (props: any) => {
           <div className="flex w-12/12 sm:w-3/12 md:w-4/12 lg:w-2/12 items-center justify-center">
             {/* <div className="w-24 h-24 bg-gray-500 rounded" /> */}
             {props?.cover_image ? (
-              <img src={props?.cover_image} alt="Dev.to Author" />
+              <img
+                src={props?.cover_image}
+                alt="Dev.to Author"
+                className="relative h-screen-15 object-cover object-top"
+              />
             ) : (
               <img
                 src="https://thepracticaldev.s3.amazonaws.com/i/78hs31fax49uwy6kbxyw.png"
