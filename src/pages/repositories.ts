@@ -13,10 +13,6 @@ export const getServerSideProps = async () => {
   const root = parse(repositories?.data);
   root.querySelectorAll("article.Box-row").forEach((url: any, index: any) => {
     if (repoIndex !== root.querySelectorAll("article.Box-row").length - 1) {
-      console.log(
-        "this is the url",
-        url.querySelector(".lh-condensed a").getAttribute("href")
-      );
       repoArr.push({
         title: url.querySelector(".lh-condensed a").getAttribute("href"),
         href: `https://github.com${url
@@ -33,7 +29,6 @@ export const getServerSideProps = async () => {
     }
     repoIndex += 1;
   });
-  console.log(repoArr);
   return {
     props: {
       repositories: repoArr,
