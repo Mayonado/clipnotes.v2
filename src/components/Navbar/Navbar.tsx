@@ -23,7 +23,7 @@ export const Navbar: React.FC = ({}) => {
         <Image src={imgLogo} alt="CLIPNOTES" />
       </div>
       <div className="w-8/12 flex flex-row gap-2 mx-4 text-sm">
-        <ActiveLink href="/articles">Articles</ActiveLink>
+        <ActiveLink href="/">Articles</ActiveLink>
         <ActiveLink href="/repositories">Repositories</ActiveLink>
       </div>
       <div className="w-3/12 flex flex-row justify-end px-8">

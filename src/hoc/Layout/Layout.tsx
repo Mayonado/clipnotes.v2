@@ -1,10 +1,4 @@
 import { Navbar } from "components/Navbar/Navbar";
-// import router, { useRouter } from "next/router";
-// import { isServer } from "utils/isServer";
-// import Cookies from "js-cookie";
-// import { redirect } from "next/dist/server/api-utils";
-// import { useRouter } from "next/router";
-// import { useEffect } from "react";
 
 const Layout: React.FC = ({ children }) => {
   return (

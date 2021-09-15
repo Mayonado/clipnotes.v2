@@ -8,7 +8,7 @@ import { PhotographIcon } from "@heroicons/react/outline";
 
 // }
 
-const ArticleItem: React.FC<Article> = (props) => {
+const ArticleItem: React.FC = (props: any) => {
   return (
     <>
       <a
@@ -20,8 +20,8 @@ const ArticleItem: React.FC<Article> = (props) => {
         <div className="flex flex-row p-4 gap-4">
           <div className="w-1/12">
             {/* <div className="w-24 h-24 bg-gray-500 rounded" /> */}
-            {props?.avatar ? (
-              <img src={props?.avatar} alt="Dev.to Author" />
+            {props?.cover_image ? (
+              <img src={props?.cover_image} alt="Dev.to Author" />
             ) : (
               <PhotographIcon />
             )}
@@ -30,7 +30,7 @@ const ArticleItem: React.FC<Article> = (props) => {
             <div className="text-gray-700 font-medium">{props?.title}</div>
             <div className="text-gray-700 text-sm">
               {moment(props?.published_at).format("MMMM DD, YYYY")} -{" "}
-              {props?.author}
+              {props?.user?.name}
             </div>
             <div className="text-gray-700">{props.description}</div>
           </div>
