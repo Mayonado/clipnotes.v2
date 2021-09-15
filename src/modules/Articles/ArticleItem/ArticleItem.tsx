@@ -12,7 +12,7 @@ const ArticleItem: React.FC = (props: any) => {
   return (
     <>
       <a
-        href={props?.href}
+        href={props?.url}
         target="_blank"
         rel="noreferrer"
         className="hover:bg-gray-50 py-4 rounded-md"

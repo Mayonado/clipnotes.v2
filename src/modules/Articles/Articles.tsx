@@ -63,8 +63,8 @@ export const Articles: NextPage = (props) => {
     <Layout>
       <div className="text-gray-700 font-bold text-xl px-5">Articles</div>
       <div className="flex flex-col gap-2 my-8">
-        {articleData?.data?.map((article: Article) => {
-          return <ArticleItem {...article} key={article.idno} />;
+        {articleData?.data?.map((article: any) => {
+          return <ArticleItem {...article} key={article.id} />;
         })}
       </div>
     </Layout>

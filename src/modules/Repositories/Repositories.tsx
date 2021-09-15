@@ -7,8 +7,22 @@ import { parse } from "node-html-parser";
 import github from "/public/svgs/github.svg";
 import Image from "next/image";
 import { Repository } from "Interfaces/Repository";
+import { useQuery } from "react-query";
 
-export const Repositories: NextPage = (props) => {
+export const Repositories: NextPage = (props: any) => {
+  //   console.log(props);
+  //   let repoIndex = 0; // looping indicator
+
+  //   const { isLoading, data: repositoryData } = useQuery(
+  //     "fetchArticles",
+  //     async () =>
+  //       await axios
+  //         .get(`https://github.com/trending/javascript?since=daily`)
+  //         .catch((err: any) => {
+  //           throw err;
+  //         })
+  //   );
+  //   console.log(repositoryData);
   //   const onTabChanged = (tab: string) => {
   //     setActiveTab(tab);
   //   };
@@ -16,7 +30,7 @@ export const Repositories: NextPage = (props) => {
     <Layout>
       <div className="text-gray-700 font-bold text-xl px-5">Repositories</div>
       <div className="flex flex-col gap-2 my-8">
-        {/* {props?.repositories?.map((repo: any) => (
+        {props?.repositories?.map((repo: any) => (
           <>
             <a
               href={repo?.href}
@@ -32,16 +46,23 @@ export const Repositories: NextPage = (props) => {
                   <div className="text-gray-700 font-medium">
                     {repo?.title.substring(1)}
                   </div>
+                  <div className="text-gray-700">{repo.description}</div>
                 </div>
               </div>
             </a>
             <div className="bg-gray-200" style={{ height: "1px" }} />
           </>
-        ))} */}
+        ))}
       </div>
     </Layout>
   );
 };
+
+// export const getStaticProps = () => {
+//   return {
+//     sample: "ehehe",
+//   };
+// };
 
 // Repositories.getInitialProps = async () => {
 //   let repoIndex = 0; // looping indicator
